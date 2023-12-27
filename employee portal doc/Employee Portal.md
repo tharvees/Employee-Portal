@@ -338,14 +338,14 @@ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityType
   ![](./Employee%20portal%20imgs/create-entity%20type%20FAQ.PNG)
 
 - **_Insert API_** 
-     - https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData 
+     - https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
 
   - Add EntityType FAQ is add the employee details for **_ModuleID , Language , OrderID , Question , Answer ._**
 
   - Entity type FAQ employee details for insert and update the details information . 
 
 - **_Update API_**
-     - https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/update?EntityData
+     - https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
 
   ![](./Employee%20portal%20imgs/edit-entity%20typeFAQ.PNG)
 
@@ -356,13 +356,14 @@ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityType
 
 ## API
 
-https://portal.mawarid.com.sa/SystemApi/api/v1/entitytype/dynamic/getbycategoryid?WorkItemTypeId
+
+https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
 
 ># Requests
   - The term `request` refers to the act of asking for something or seeking assistance. In various contexts, a request can be a formal or informal expression of the desire or need for a particular action, information, service, or permission.
 
 ## API
- https://portal.mawarid.com.sa/SystemApi/api/v1/entitytype/dynamic/get/?entityTypeRecId
+ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
 
  - **_Create API_**
    - https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
