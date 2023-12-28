@@ -1,0 +1,1201 @@
+{
+	"info": {
+		"_postman_id": "febaa658-f798-4d0f-aa6c-fa10fd8c18bd",
+		"name": "Employee Portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31954436"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO=2477411306&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"crm",
+						"GetEmployeeByID"
+					],
+					"query": [
+						{
+							"key": "IqamaNO",
+							"value": "2477411306"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register mobile number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"crm",
+						"GetEmployeeByID"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update mobile number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"crm",
+						"GetEmployeeByID"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "otp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/productivitymenuitems?ispermission=true&ModuleId=Employee&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"productivitymenuitems"
+					],
+					"query": [
+						{
+							"key": "ispermission",
+							"value": "true"
+						},
+						{
+							"key": "ModuleId",
+							"value": "Employee"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Balances",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/getBalancesOfVisaVacationAndTicket?EmpNum=1048417&VacationType=Annual&StartDate=12/27/2023&VacationDays=0&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"getBalancesOfVisaVacationAndTicket"
+					],
+					"query": [
+						{
+							"key": "EmpNum",
+							"value": "1048417"
+						},
+						{
+							"key": "VacationType",
+							"value": "Annual"
+						},
+						{
+							"key": "StartDate",
+							"value": "12/27/2023"
+						},
+						{
+							"key": "VacationDays",
+							"value": "0"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Payslip",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v1/erp/getEmployeePaySlipDetails?_employeeId=1048417&legalEntity=MWD&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v1",
+						"erp",
+						"getEmployeePaySlipDetails"
+					],
+					"query": [
+						{
+							"key": "_employeeId",
+							"value": "1048417"
+						},
+						{
+							"key": "legalEntity",
+							"value": "MWD"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "letterdownload",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://bcp.mawarid.com.sa/api/v2/crm/GetDownLoadLetterTypes?user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"bcp",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"api",
+						"v2",
+						"crm",
+						"GetDownLoadLetterTypes"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "observation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/crm/GetIncidentList?EmployeeID=e8247859-a7f0-e911-8126-005056867cf2&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"crm",
+						"GetIncidentList"
+					],
+					"query": [
+						{
+							"key": "EmployeeID",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create - observation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId=74&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"form"
+					],
+					"query": [
+						{
+							"key": "EntityTypeId",
+							"value": "74"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "leave request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeLeaveRequests?employeeId=e8247859-a7f0-e911-8126-005056867cf2&user-id=1048417&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"Employee",
+						"GetEmployeeLeaveRequests"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "user-id",
+							"value": "1048417"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Final Exit Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeEOSRequests?employeeId=e8247859-a7f0-e911-8126-005056867cf2&user-id=1048417&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"Employee",
+						"GetEmployeeEOSRequests"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "user-id",
+							"value": "1048417"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Iqama Renewal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeIqamaRenewRequests?employeeId=e8247859-a7f0-e911-8126-005056867cf2&user-id=1048417",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"Employee",
+						"GetEmployeeIqamaRenewRequests"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "user-id",
+							"value": "1048417"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employee contract renewal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeContractRenewalRequests?employeeId=e8247859-a7f0-e911-8126-005056867cf2&user-id=1048417",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"Employee",
+						"GetEmployeeContractRenewalRequests"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "user-id",
+							"value": "1048417"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employee inquiry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/EmployeeInquiry/GetAllInquiries?employeeId=e8247859-a7f0-e911-8126-005056867cf2&user-id=1048417",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"EmployeeInquiry",
+						"GetAllInquiries"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "user-id",
+							"value": "1048417"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create -Employee Inquiry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId=88&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"form"
+					],
+					"query": [
+						{
+							"key": "EntityTypeId",
+							"value": "88"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "notification",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotifications?employeeId=e8247859-a7f0-e911-8126-005056867cf2&user-id=1048417",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"Notifications",
+						"GetNotifications"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "user-id",
+							"value": "1048417"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "arabic notification",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotifications?employeeId=e8247859-a7f0-e911-8126-005056867cf2&user-id=1048417&lang=ar",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"Notifications",
+						"GetNotifications"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "user-id",
+							"value": "1048417"
+						},
+						{
+							"key": "lang",
+							"value": "ar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "english notification",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotifications?employeeId=e8247859-a7f0-e911-8126-005056867cf2&user-id=1048417",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"Notifications",
+						"GetNotifications"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "user-id",
+							"value": "1048417"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Announcement",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Announcements/GetAnnouncements?user-id=1048417",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"Announcements",
+						"GetAnnouncements"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "1048417"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Appointment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/MainOfficeReserReq/GetAllRequests?employeeId=e8247859-a7f0-e911-8126-005056867cf2&pageSize=5&pageNumber=1&user-id=1048417",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"MainOfficeReserReq",
+						"GetAllRequests"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "user-id",
+							"value": "1048417"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create - Appointment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId=83&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"form"
+					],
+					"query": [
+						{
+							"key": "EntityTypeId",
+							"value": "83"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Previous Requests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/MainOfficeReserReq/GetAllRequests?employeeId=e8247859-a7f0-e911-8126-005056867cf2&pageSize=5&pageNumber=1&user-id=1048417",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"MainOfficeReserReq",
+						"GetAllRequests"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "user-id",
+							"value": "1048417"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Active Requests",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Traffic Fine List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/TrafficFines/GetAllTrafficFines?employeeId=e8247859-a7f0-e911-8126-005056867cf2&user-id=1048417",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"TrafficFines",
+						"GetAllTrafficFines"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "user-id",
+							"value": "1048417"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Medical Insurance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/crm/GetMedicalCover?user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"crm",
+						"GetMedicalCover"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FAQ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId=68&$page=1&$size=100&$orderby=OrderId&$orderbydirection=0&$filter:Language=Eng&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"dynamic",
+						"get",
+						""
+					],
+					"query": [
+						{
+							"key": "entityTypeRecId",
+							"value": "68"
+						},
+						{
+							"key": "$page",
+							"value": "1"
+						},
+						{
+							"key": "$size",
+							"value": "100"
+						},
+						{
+							"key": "$orderby",
+							"value": "OrderId"
+						},
+						{
+							"key": "$orderbydirection",
+							"value": "0"
+						},
+						{
+							"key": "$filter:Language",
+							"value": "Eng"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FAQ - Admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId=68&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"dynamic",
+						"get",
+						""
+					],
+					"query": [
+						{
+							"key": "entityTypeRecId",
+							"value": "68"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId=68&$page=1&$size=10&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"dynamic",
+						"get",
+						""
+					],
+					"query": [
+						{
+							"key": "entityTypeRecId",
+							"value": "68"
+						},
+						{
+							"key": "$page",
+							"value": "1"
+						},
+						{
+							"key": "$size",
+							"value": "10"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update - FAQ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId=68&$page=1&$size=10&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"dynamic",
+						"get",
+						""
+					],
+					"query": [
+						{
+							"key": "entityTypeRecId",
+							"value": "68"
+						},
+						{
+							"key": "$page",
+							"value": "1"
+						},
+						{
+							"key": "$size",
+							"value": "10"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId=78&$page=1&$size=100&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"field"
+					],
+					"query": [
+						{
+							"key": "EntityTypeId",
+							"value": "78"
+						},
+						{
+							"key": "$page",
+							"value": "1"
+						},
+						{
+							"key": "$size",
+							"value": "100"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId=79&$page=1&$size=100&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"field"
+					],
+					"query": [
+						{
+							"key": "EntityTypeId",
+							"value": "79"
+						},
+						{
+							"key": "$page",
+							"value": "1"
+						},
+						{
+							"key": "$size",
+							"value": "100"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create - request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData={\"IqamaNumber\":\"2477411306\",\"CoordinatorName\":\"Manar Al Malahi\",\"CoordinatorEmail\":\"m.almalahi@mawarid.com.sa\",\"SupervisorName\":\"Manar Al Malahi\",\"SupervisorEmail\":\"m.almalahi@mawarid.com.sa\",\"Title\":\"test\",\"Description\":\"test\",\"Language\":\"Indonesia\",\"RequestType\":\"Deduction \",\"ProcessStageEn\":null,\"EntityType\":150,\"ETFormRecId\":798,\"EntityTypeId\":\"79\",\"Source\":\"ERP\",\"CreatedByUserType\":null,\"Channel\":1}&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"dynamic",
+						"insert"
+					],
+					"query": [
+						{
+							"key": "EntityData",
+							"value": "{\"IqamaNumber\":\"2477411306\",\"CoordinatorName\":\"Manar Al Malahi\",\"CoordinatorEmail\":\"m.almalahi@mawarid.com.sa\",\"SupervisorName\":\"Manar Al Malahi\",\"SupervisorEmail\":\"m.almalahi@mawarid.com.sa\",\"Title\":\"test\",\"Description\":\"test\",\"Language\":\"Indonesia\",\"RequestType\":\"Deduction \",\"ProcessStageEn\":null,\"EntityType\":150,\"ETFormRecId\":798,\"EntityTypeId\":\"79\",\"Source\":\"ERP\",\"CreatedByUserType\":null,\"Channel\":1}"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

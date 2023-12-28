@@ -377,4 +377,6 @@ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
 
  - after Add the details successfully into the message .
 
- 
+># API Collection 
+
+   - [Employee portal API](./Employee%20Portal.postman_collection.json).
