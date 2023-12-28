@@ -4,6 +4,8 @@
    - **_Al Mawarid Manpower_** is a private company . The company currently specializes in the Human Resources area .
    - **Established** in **_2012_**, Al Mawarid Manpower Solutions Company, a closed shareholding company, was one of the first six companies to obtain the recruitment license from the Ministry of Labor and one of the leading companies to work in that field in the Kingdom.
    - Origin : **_Riyadh , Saudi Arabia ._**
+># EMPLOYEE PORTAL
+
 
 ># Login URL for Employee portal 
 URL : https://portal.mawarid.com.sa/Employee/UI/#/Employee/login
@@ -36,7 +38,7 @@ https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
 
 ># **OTP Page**
 ## **API**
-https://portal.mawarid.com.sa/Employee/api/v1/sms/ValidateOTP?UserId
+https://portal.mawarid.com.sa/Employee/api/v1/entitytype/productivitymenuitems?ispermission
  
 ![](./Employee%20portal%20imgs/otp.PNG)
 
@@ -281,7 +283,9 @@ https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/MainOfficeReserReq/Get
 ![](./Employee%20portal%20imgs/appointment.PNG)
 
 ## Create - Appointment
- - create API - https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
+ - create API 
+ 
+    https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
 
 ![](./Employee%20portal%20imgs/create-%20appointment.PNG)
 
@@ -308,8 +312,8 @@ https://portal.mawarid.com.sa/Employee/api/v2/crm/GetMedicalCover
 ![](./Employee%20portal%20imgs/medical%20insurance.PNG)
 
  - If any doubt go to the 
-    - Customer Care Email : customercare@mawarid.com.sa
-    - Customer Care Number : 920027202
+ - Customer Care Email : customercare@mawarid.com.sa
+ - Customer Care Number : 920027202
 ># FAQ
 
 ## API
@@ -338,14 +342,14 @@ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityType
   ![](./Employee%20portal%20imgs/create-entity%20type%20FAQ.PNG)
 
 - **_Insert API_** 
-     - https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
+      https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
 
   - Add EntityType FAQ is add the employee details for **_ModuleID , Language , OrderID , Question , Answer ._**
 
   - Entity type FAQ employee details for insert and update the details information . 
 
 - **_Update API_**
-     - https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
+      https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
 
   ![](./Employee%20portal%20imgs/edit-entity%20typeFAQ.PNG)
 
@@ -366,14 +370,15 @@ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
  https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
 
  - **_Create API_**
-   - https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
+  
+   https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
 
  ![](./Employee%20portal%20imgs/create-requests.PNG)
 
  - This one Create - Request for Add the **_Iqama Number , Coordinator , CoordinatorEmail ,  Supervisor , Supervisor Email , Title , Description , Language , Request Type ._**
 
  - **_Add API_**
-   - https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+    https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
 
  - after Add the details successfully into the message .
 
