@@ -1,16 +1,16 @@
 ![](https://portal.mawarid.com.sa/Employee/UI/assets/images/mawarid-logo-2.png)
 
-> # Introduction
+# Introduction
    - **_Al Mawarid Manpower_** is a private company . The company currently specializes in the Human Resources area .
    - **Established** in **_2012_**, Al Mawarid Manpower Solutions Company, a closed shareholding company, was one of the first six companies to obtain the recruitment license from the Ministry of Labor and one of the leading companies to work in that field in the Kingdom.
    - Origin : **_Riyadh , Saudi Arabia ._**
-># EMPLOYEE PORTAL
+# EMPLOYEE PORTAL
 
 
-># Login URL for Employee portal 
+# Login URL for Employee portal 
 URL : https://portal.mawarid.com.sa/Employee/UI/#/Employee/login
 
-># **_Employee Portal Login Page_**
+# **_Employee Portal Login Page_**
 ## **API :**
 https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
 
@@ -36,7 +36,7 @@ https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
 
    ![](./Employee%20portal%20imgs/update%20mobile%20number.PNG)
 
-># **OTP Page**
+# **OTP Page**
 ## **API**
 https://portal.mawarid.com.sa/Employee/api/v1/entitytype/productivitymenuitems?ispermission
  
@@ -47,10 +47,10 @@ It contains 13 MenuBar in the left side of the user and they are,
 
 ![](./Employee%20portal%20imgs/Capture.PNG)
 
-># **My Profile**
+# **My Profile**
  - My Profile which means an employee's profile . It actually contains a full details of the employee such as **Mawarid Employee ID, Name, Profession, Iqama Number, Nationality, Border NO, Project ID, Project Name, Passport Number, Iqama Expiry Date, Passport Expiry Date, Date of Birth, Arrival Date, Status, Contract Start Date, Contract End Date, Bank Account Number, Phone Number** .
   
-># **Contact Info**
+# **Contact Info**
 
   - `Contact info` is an abbreviation for **_contact information_** . Contact information typically refers to details that allow individuals or entities to be reached or contacted . 
 
@@ -64,7 +64,7 @@ It contains 13 MenuBar in the left side of the user and they are,
 
    ![](./Employee%20portal%20imgs/contact%20info.PNG)
 
-># **Balances**
+# **Balances**
   - In a financial context, `Balances` often refers to the amount of money in an account. For example, the balance of a bank account is the difference between the credits (deposits) and debits (withdrawals) made in the account.
 ## **API :**
 
@@ -72,12 +72,17 @@ https://bcp.mawarid.com.sa/api/v1/erp/getBalancesOfVisaVacationAndTicket?EmpNum
 
 ![](./Employee%20portal%20imgs/balance.PNG)
 
-  - **History of Loan**
-    - Api - https://portal.mawarid.com.sa/api/v1/erp/getEmployeeLoanDetails?_personnelNumber
+### History of Loan
+    
+### Api  
 
-    ![](./Employee%20portal%20imgs/history%20of%20loan.PNG)
+ <!-- https://portal.mawarid.com.sa/api/v1/erp/getEmployeeLoanDetails?_personnelNumber -->
+ 
+https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
 
-># **PaySlip**
+  ![](./Employee%20portal%20imgs/history%20of%20loan.PNG)
+
+# **PaySlip**
   -  Pay slip is a document containing a detailed list about the various components of your salary along with specific details of employment.
   - If you need payslip You can **Download** it 
 ## **API**
@@ -86,7 +91,7 @@ https://bcp.mawarid.com.sa/api/v1/erp/getEmployeePaySlipDetails?_employeeId
 ![](./Employee%20portal%20imgs/payslip.PNG)
 
 
-># **Letter Download**
+# **Letter Download**
  - `Letter download` typically refers to the process of obtaining or retrieving a letter or document from the internet or a digital platform to your local device. 
  - This can include various types of letters, such as formal letters, business letters, reference letters, or any document that is available for download in a digital format.   
 ## **API**
@@ -94,9 +99,9 @@ https://bcp.mawarid.com.sa/api/v2/crm/GetDownLoadLetterTypes
 
 ![](./Employee%20portal%20imgs/letter%20download.PNG)
 
-   
+<!-- file:///C:/Users/HOME/Downloads/BR000145520231228.pdf  -->
 
-># **Observation**
+# **Observation**
  
   - Employee observation refers to the practice of systematically observing and assessing an employee's job performance, behavior, skills, and interactions within the workplace . 
   - This process is often conducted by supervisors, managers, or designated individuals within an organization as a part of performance management and evaluation . 
@@ -107,13 +112,23 @@ https://portal.mawarid.com.sa/Employee/api/v2/crm/GetIncidentList?EmployeeID
 
 ![](./Employee%20portal%20imgs/observation.PNG)
 
-># **Create Observation**
+# **Create Observation**
 
-## **API**
+## API
 
 https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
 
 ![](./Employee%20portal%20imgs/create%20-observation.PNG)
+ 
+## CaseCategoryEn DropDown API
+
+https://portal.mawarid.com.sa/Employee/api/v2/crm/GetIncidentCategory
+
+ ![](./Employee%20portal%20imgs/dropdown%20-%20observation.PNG)
+
+### Add API
+
+https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
 
 ># **Employee Request**
 - Employee Request is contains of employee's 
@@ -179,7 +194,7 @@ Return Date ._**
       - **_Sick Leave_**
       - **_Personal Leave_**
 
-># Final Exit Request 
+# Final Exit Request 
 
 ## **API** 
  https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeEOSRequests?employeeId
@@ -188,7 +203,7 @@ Return Date ._**
    - **_Final Exit Request_** contains **_Request Number	
 Request Date , Request Status , Request Type , Last Working Date , Visa Start Date , Visa Number , Flight Number , Flight Ticket TravelDate_**	and **_End Of Service Amount ._**
 
-># Employee Iqama Renewal
+# Employee Iqama Renewal
   - the Iqama (residence permit) for expatriate employees is typically issued for a specific duration, usually one year. **_To continue living and working in the country, employees need to go through the Iqama renewal process before their current permit expires ._** 
 
 ## **API**
@@ -206,7 +221,7 @@ https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeIq
 
 ![](./Employee%20portal%20imgs/employee%20iqama%20renewal.PNG)
 
-># Employee contract Renewal
+# Employee contract Renewal
 
 ## **API** 
 https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeContractRenewalRequests?employeeId
@@ -222,7 +237,7 @@ Old Contract End Date , Period In Months , Customer Approval , Labor Approval .*
 
 ![](./Employee%20portal%20imgs/employee%20contract%20renewal.PNG)
 
-># Employee Inquiry
+# Employee Inquiry
  - `Employee inquiry` typically refers to the process of **_seeking information or conducting an investigation related to an employee's work, conduct, performance, or any other relevant aspect of their employment ._** 
 
  - The purpose of an employee inquiry can vary, but it is often conducted by employers, human resources (HR) departments, or management to gather information or address specific concerns .
@@ -242,7 +257,11 @@ Status Name , Created On , Employee Inquiry Details	, Can Add Notes ._**
 
 ![](./Employee%20portal%20imgs/create-%20employee%20inquiry.PNG)
 
-># Employee View
+### Add API
+ 
+https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+
+# Employee View
  - `employee view` could refer to the user interface or dashboard that employees use to access and interact with HR-related information . 
  - This could include features such as viewing their **_personal details, pay stubs, benefits information, requesting time off, accessing training materials, and more ._**
  - Employee View it contains of 
@@ -254,6 +273,7 @@ Status Name , Created On , Employee Inquiry Details	, Can Add Notes ._**
 ## Notification 
 
 ## API
+
 https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotifications?employeeId
 
  - A notification is a message or alert that informs someone about a      **_specific event, update,_** or **_piece of information ._**
@@ -263,6 +283,14 @@ https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotif
    - **_Arabic Notification_**
 
 ![](./Employee%20portal%20imgs/notification.PNG)
+
+### English Notification API
+
+https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotifications?employeeId
+
+### Arabic Notification API
+
+https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotifications?employeeId
 
 ## Announcement
 
@@ -282,10 +310,14 @@ https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/MainOfficeReserReq/Get
 
 ![](./Employee%20portal%20imgs/appointment.PNG)
 
-## Create - Appointment
- - create API 
+ - **_Active Request_** is often used in the context of computing, networking, and web development to refer to a request or transaction that is currently in progress or has been initiated and is awaiting a response .
  
-    https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
+ - **_Previous Request_** generally refers to a request that was made before the current one in a sequence of requests. In various contexts such as web development, networking, or database interactions, it could imply different scenarios .
+
+## Create - Appointment
+###  create API 
+ 
+ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
 
 ![](./Employee%20portal%20imgs/create-%20appointment.PNG)
 
@@ -296,13 +328,15 @@ https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/MainOfficeReserReq/Get
 
 https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/TrafficFines/GetAllTrafficFines?employeeId
 
- - A `Traffic Fine List` typically refers to a compilation or record of fines imposed on individuals for violations of traffic laws and regulations. 
+ - A `Traffic Fine List` typically refers to a compilation or record of fines imposed on individuals for violations of traffic laws and regulations . 
 
- - Traffic fines are penalties imposed by law enforcement authorities for various traffic offenses, such as speeding, running red lights, improper parking, and other violations.
+ - Traffic fines are penalties imposed by law enforcement authorities for various traffic offenses, such as speeding, running red lights, improper parking, and other violations .
 
 
-># Medical Insurance
+# Medical Insurance
+
 ## API
+
 https://portal.mawarid.com.sa/Employee/api/v2/crm/GetMedicalCover
 
  - `Medical insurance`, also known as **_Health insurance_**, is a type of coverage that provides financial protection and assistance in covering the costs of medical and health-related expenses . 
@@ -314,7 +348,7 @@ https://portal.mawarid.com.sa/Employee/api/v2/crm/GetMedicalCover
  - If any doubt go to the 
  - Customer Care Email : customercare@mawarid.com.sa
  - Customer Care Number : 920027202
-># FAQ
+# FAQ
 
 ## API
  https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
@@ -326,7 +360,8 @@ https://portal.mawarid.com.sa/Employee/api/v2/crm/GetMedicalCover
 
 ![](./Employee%20portal%20imgs/faq.PNG)
 
-># FAQ - Admin
+
+# FAQ - Admin
 
 ## API
 https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
@@ -341,19 +376,31 @@ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityType
   
   ![](./Employee%20portal%20imgs/create-entity%20type%20FAQ.PNG)
 
-- **_Insert API_** 
-      https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
+### Add API 
+  
+https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
 
   - Add EntityType FAQ is add the employee details for **_ModuleID , Language , OrderID , Question , Answer ._**
 
+### Language Dropdown API
+
+https://portal.mawarid.com.sa/Employee/api/v1/lookupvalues/GetAllByLookTypeId/1
+ 
+ ![](./Employee%20portal%20imgs/language%20dropdown.PNG)
+
   - Entity type FAQ employee details for insert and update the details information . 
 
-- **_Update API_**
-      https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
+### Edit popup API
+
+https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form/activationrecorddetails/68
+
+### Update API
+    
+  https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/update?EntityData
 
   ![](./Employee%20portal%20imgs/edit-entity%20typeFAQ.PNG)
 
-># Task
+# Task
   - A `task` generally refers to a specific piece of work or an activity that needs to be accomplished within a set period . 
   - Tasks are typically **part of larger projects, job responsibilities, or personal to-do lists .** 
     - They are specific actions or assignments that contribute to **_achieving a goal or completing a project ._**
@@ -363,25 +410,26 @@ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityType
 
 https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
 
-># Requests
+# Requests
   - The term `request` refers to the act of asking for something or seeking assistance. In various contexts, a request can be a formal or informal expression of the desire or need for a particular action, information, service, or permission.
 
 ## API
  https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
 
- - **_Create API_**
+**_Create API_**
   
    https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
 
  ![](./Employee%20portal%20imgs/create-requests.PNG)
 
- - This one Create - Request for Add the **_Iqama Number , Coordinator , CoordinatorEmail ,  Supervisor , Supervisor Email , Title , Description , Language , Request Type ._**
+**_Add API_**
 
- - **_Add API_**
-    https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+
+ - This one Create - Request for Add the **_Iqama Number , Coordinator , CoordinatorEmail ,  Supervisor , Supervisor Email , Title , Description , Language , Request Type ._**
 
  - after Add the details successfully into the message .
 
-># API Collection 
+# API Collection 
 
    - [Employee portal API](./Employee%20Portal.postman_collection.json).

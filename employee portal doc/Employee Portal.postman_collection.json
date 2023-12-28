@@ -189,6 +189,49 @@
 			"response": []
 		},
 		{
+			"name": "History of loan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId=69&$page=1&$size=100&user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"field"
+					],
+					"query": [
+						{
+							"key": "EntityTypeId",
+							"value": "69"
+						},
+						{
+							"key": "$page",
+							"value": "1"
+						},
+						{
+							"key": "$size",
+							"value": "100"
+						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Payslip",
 			"request": {
 				"method": "GET",
@@ -317,6 +360,37 @@
 							"key": "EntityTypeId",
 							"value": "74"
 						},
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dropdown - observation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/crm/GetIncidentCategory?user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"crm",
+						"GetIncidentCategory"
+					],
+					"query": [
 						{
 							"key": "user-id",
 							"value": "2477411306"
@@ -820,7 +894,43 @@
 			"name": "Active Requests",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/MainOfficeReserReq/GetAllRequests?employeeId=e8247859-a7f0-e911-8126-005056867cf2&pageSize=5&pageNumber=1&user-id=1048417",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v2",
+						"employeecrm",
+						"MainOfficeReserReq",
+						"GetAllRequests"
+					],
+					"query": [
+						{
+							"key": "employeeId",
+							"value": "e8247859-a7f0-e911-8126-005056867cf2"
+						},
+						{
+							"key": "pageSize",
+							"value": "5"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "user-id",
+							"value": "1048417"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -986,12 +1096,44 @@
 			"response": []
 		},
 		{
-			"name": "Add",
+			"name": "Language Dropdown",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId=68&$page=1&$size=10&user-id=2477411306",
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/lookupvalues/GetAllByLookTypeId/1?user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"lookupvalues",
+						"GetAllByLookTypeId",
+						"1"
+					],
+					"query": [
+						{
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add entity faq ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData=%7B%22ModuleId%22%3A%22Employee%22%2C%22Language%22%3A%22Urdu%22%2C%22OrderId%22%3A%222%22%2C%22Question%22%3A%22How%20to%20Download%20the%20letter%20%3F%22%2C%22Answer%22%3A%22Menu%20to%20Download%22%2C%22EntityTypeId%22%3A%2268%22%2C%22EntityType%22%3A110%2C%22ETFormRecId%22%3A508%2C%22Source%22%3A%22ERP%22%2C%22CreatedByUserType%22%3Anull%2C%22Channel%22%3A1%7D&user-id=2477411306",
 					"protocol": "https",
 					"host": [
 						"portal",
@@ -1005,22 +1147,46 @@
 						"v1",
 						"entitytype",
 						"dynamic",
-						"get",
-						""
+						"insert"
 					],
 					"query": [
 						{
-							"key": "entityTypeRecId",
-							"value": "68"
+							"key": "EntityData",
+							"value": "%7B%22ModuleId%22%3A%22Employee%22%2C%22Language%22%3A%22Urdu%22%2C%22OrderId%22%3A%222%22%2C%22Question%22%3A%22How%20to%20Download%20the%20letter%20%3F%22%2C%22Answer%22%3A%22Menu%20to%20Download%22%2C%22EntityTypeId%22%3A%2268%22%2C%22EntityType%22%3A110%2C%22ETFormRecId%22%3A508%2C%22Source%22%3A%22ERP%22%2C%22CreatedByUserType%22%3Anull%2C%22Channel%22%3A1%7D"
 						},
 						{
-							"key": "$page",
-							"value": "1"
-						},
-						{
-							"key": "$size",
-							"value": "10"
-						},
+							"key": "user-id",
+							"value": "2477411306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit - entity type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form/activationrecorddetails/68?user-id=2477411306",
+					"protocol": "https",
+					"host": [
+						"portal",
+						"mawarid",
+						"com",
+						"sa"
+					],
+					"path": [
+						"Employee",
+						"api",
+						"v1",
+						"entitytype",
+						"form",
+						"activationrecorddetails",
+						"68"
+					],
+					"query": [
 						{
 							"key": "user-id",
 							"value": "2477411306"
@@ -1033,10 +1199,10 @@
 		{
 			"name": "update - FAQ",
 			"request": {
-				"method": "GET",
+				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId=68&$page=1&$size=10&user-id=2477411306",
+					"raw": "https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/update?EntityData={%22ModuleId%22:%22Employee%22,%22Language%22:%22Urdu%22,%22OrderId%22:%223%22,%22Question%22:%22How%20to%20download%20the%20letter%20?%22,%22Answer%22:%22Please%20use%20letter%20download%20Menu%20to%20download%20the%20letter%22,%22EntityTypeId%22:%2268%22,%22EntityType%22:110,%22ETFormRecId%22:508,%22RecId%22:3}&user-id=2477411306",
 					"protocol": "https",
 					"host": [
 						"portal",
@@ -1050,21 +1216,12 @@
 						"v1",
 						"entitytype",
 						"dynamic",
-						"get",
-						""
+						"update"
 					],
 					"query": [
 						{
-							"key": "entityTypeRecId",
-							"value": "68"
-						},
-						{
-							"key": "$page",
-							"value": "1"
-						},
-						{
-							"key": "$size",
-							"value": "10"
+							"key": "EntityData",
+							"value": "{%22ModuleId%22:%22Employee%22,%22Language%22:%22Urdu%22,%22OrderId%22:%223%22,%22Question%22:%22How%20to%20download%20the%20letter%20?%22,%22Answer%22:%22Please%20use%20letter%20download%20Menu%20to%20download%20the%20letter%22,%22EntityTypeId%22:%2268%22,%22EntityType%22:110,%22ETFormRecId%22:508,%22RecId%22:3}"
 						},
 						{
 							"key": "user-id",
