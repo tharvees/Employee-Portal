@@ -11,7 +11,7 @@
 URL : https://portal.mawarid.com.sa/Employee/UI/#/Employee/login
 
 # **_Employee Portal Login Page_**
-## **API :**
+## API 
 
 Method : GET
 
@@ -24,7 +24,7 @@ URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
  - **_Register Mobile Number_**
    - A employee portal employee must register phone number .
    - And **Iqama Number , Passport Number , Phone Number**  details to give .
-### Register Api 
+## Register Api 
 
 Method : GET
 
@@ -39,7 +39,7 @@ URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
      - **_Passport Number ,_**    
      - **_Old Phone Number ,_** 
      - **_New Phone Number ._**
-### Update Api 
+## Update Api 
 
 Method : GET
 
