@@ -4,7 +4,7 @@
    - **_Al Mawarid Manpower_** is a private company . The company currently specializes in the Human Resources area .
    - **Established** in **_2012_**, Al Mawarid Manpower Solutions Company, a closed shareholding company, was one of the first six companies to obtain the recruitment license from the Ministry of Labor and one of the leading companies to work in that field in the Kingdom.
    - Origin : **_Riyadh , Saudi Arabia ._**
-# EMPLOYEE PORTAL
+
 
 
 # Login URL for Employee portal 
@@ -12,14 +12,23 @@ URL : https://portal.mawarid.com.sa/Employee/UI/#/Employee/login
 
 # **_Employee Portal Login Page_**
 ## **API :**
-https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
+
+Method : GET
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
+
+
 
  ![](./Employee%20portal%20imgs/Login%20page.PNG)
 
  - **_Register Mobile Number_**
    - A employee portal employee must register phone number .
    - And **Iqama Number , Passport Number , Phone Number**  details to give .
-   - **_Register Api_**  https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
+### Register Api 
+
+Method : GET
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
 
    ![](./Employee%20portal%20imgs/register%20mobile%20number.PNG)
 
@@ -30,15 +39,20 @@ https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
      - **_Passport Number ,_**    
      - **_Old Phone Number ,_** 
      - **_New Phone Number ._**
-   - Update Api 
-   https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
+### Update Api 
 
+Method : GET
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
 
    ![](./Employee%20portal%20imgs/update%20mobile%20number.PNG)
 
 # **OTP Page**
-## **API**
-https://portal.mawarid.com.sa/Employee/api/v1/entitytype/productivitymenuitems?ispermission
+## API
+
+Method : GET
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/productivitymenuitems?ispermission
  
 ![](./Employee%20portal%20imgs/otp.PNG)
 
@@ -66,10 +80,18 @@ It contains 13 MenuBar in the left side of the user and they are,
 
 # **Balances**
   - In a financial context, `Balances` often refers to the amount of money in an account. For example, the balance of a bank account is the difference between the credits (deposits) and debits (withdrawals) made in the account.
-## **API :**
+## API 
 
-https://bcp.mawarid.com.sa/api/v1/erp/getBalancesOfVisaVacationAndTicket?EmpNum
+Method : GET
 
+URL : https://bcp.mawarid.com.sa/api/v1/erp/getBalancesOfVisaVacationAndTicket?EmpNum
+
+Parameters : 
+  - EmpNum: 1048417
+  - VacationType: Annual
+  - StartDate: 12/31/2023
+  - VacationDays: 0
+  
 ![](./Employee%20portal%20imgs/balance.PNG)
 
 ### History of Loan
@@ -77,16 +99,27 @@ https://bcp.mawarid.com.sa/api/v1/erp/getBalancesOfVisaVacationAndTicket?EmpNum
 ### Api  
 
  <!-- https://portal.mawarid.com.sa/api/v1/erp/getEmployeeLoanDetails?_personnelNumber -->
- 
-https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
+
+Method : GET
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
+
 
   ![](./Employee%20portal%20imgs/history%20of%20loan.PNG)
 
 # **PaySlip**
   -  Pay slip is a document containing a detailed list about the various components of your salary along with specific details of employment.
   - If you need payslip You can **Download** it 
-## **API**
-https://bcp.mawarid.com.sa/api/v1/erp/getEmployeePaySlipDetails?_employeeId
+## API
+
+Method : GET
+
+URL : https://bcp.mawarid.com.sa/api/v1/erp/getEmployeePaySlipDetails?_employeeId 
+
+Parameters :
+ - _employeeId
+ - legalEntity
+
 
 ![](./Employee%20portal%20imgs/payslip.PNG)
 
@@ -94,8 +127,12 @@ https://bcp.mawarid.com.sa/api/v1/erp/getEmployeePaySlipDetails?_employeeId
 # **Letter Download**
  - `Letter download` typically refers to the process of obtaining or retrieving a letter or document from the internet or a digital platform to your local device. 
  - This can include various types of letters, such as formal letters, business letters, reference letters, or any document that is available for download in a digital format.   
-## **API**
-https://bcp.mawarid.com.sa/api/v2/crm/GetDownLoadLetterTypes
+## API
+
+Method : GET 
+
+URL : https://bcp.mawarid.com.sa/api/v2/crm/GetDownLoadLetterTypes
+
 
 ![](./Employee%20portal%20imgs/letter%20download.PNG)
 
@@ -107,8 +144,15 @@ https://bcp.mawarid.com.sa/api/v2/crm/GetDownLoadLetterTypes
   - This process is often conducted by supervisors, managers, or designated individuals within an organization as a part of performance management and evaluation . 
   
 
-## **API**
-https://portal.mawarid.com.sa/Employee/api/v2/crm/GetIncidentList?EmployeeID
+## API
+
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetIncidentList?EmployeeID
+
+Parameters : 
+
+- EmployeeID
 
 ![](./Employee%20portal%20imgs/observation.PNG)
 
@@ -116,21 +160,29 @@ https://portal.mawarid.com.sa/Employee/api/v2/crm/GetIncidentList?EmployeeID
 
 ## API
 
-https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
+Method : GET
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
+
+
 
 ![](./Employee%20portal%20imgs/create%20-observation.PNG)
  
 ## CaseCategoryEn DropDown API
 
-https://portal.mawarid.com.sa/Employee/api/v2/crm/GetIncidentCategory
+Method : GET
 
- ![](./Employee%20portal%20imgs/dropdown%20-%20observation.PNG)
+URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetIncidentCategory
+
+![](./Employee%20portal%20imgs/dropdown%20-%20observation.PNG)
 
 ### Add API
 
-https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+Method : GET
 
-># **Employee Request**
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+
+# **Employee Request**
 - Employee Request is contains of employee's 
     - **_Leave Request_**
     - **_Final Exit Request_**
@@ -144,8 +196,13 @@ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityDa
 
 ## **API**
 
-https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeLeaveRequests?employeeId
+Method : GET
 
+URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeLeaveRequests?employeeId
+
+Parameters : 
+ - employeeId
+ - user-id
 
 and, leave request for more procedures for employee's **_Leave Request Number ,	
 External Leave ,	
@@ -196,8 +253,16 @@ Return Date ._**
 
 # Final Exit Request 
 
-## **API** 
- https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeEOSRequests?employeeId
+## API 
+
+Method : GET
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeEOSRequests?employeeId
+
+Parameters : 
+ - employeeId
+ - user-id
+
    - **`Final Exit Request`** typically refers to a formal procedure or process through which an employee informs their employer of their intention to leave the company permanently .
    - It is essentially a formal notification of resignation or departure, indicating that the employee is making their final exit from the organization .
    - **_Final Exit Request_** contains **_Request Number	
@@ -206,9 +271,17 @@ Request Date , Request Status , Request Type , Last Working Date , Visa Start Da
 # Employee Iqama Renewal
   - the Iqama (residence permit) for expatriate employees is typically issued for a specific duration, usually one year. **_To continue living and working in the country, employees need to go through the Iqama renewal process before their current permit expires ._** 
 
-## **API**
+## API
 <!-- https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId -->
-https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeIqamaRenewRequests?employeeId
+ 
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeIqamaRenewRequests?employeeId
+
+Parameters :
+
+ - employeeId
+ - user-id
 
 ## Iqama Number
   -  `Iqama` typically refers to a residence permit or residency card issued to expatriates living in Saudi Arabia . 
@@ -223,8 +296,16 @@ https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeIq
 
 # Employee contract Renewal
 
-## **API** 
-https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeContractRenewalRequests?employeeId
+## API
+
+Method : GET
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Employee/GetEmployeeContractRenewalRequests?employeeId
+
+Parameters : 
+
+ - employeeId
+ - user-id
 
 ### Employee Contract Renewal :
   - `Employee contract renewal` refers to the process of **_extending or renewing_** the terms and conditions of an employment contract between an employer and an employee . 
@@ -242,8 +323,16 @@ Old Contract End Date , Period In Months , Customer Approval , Labor Approval .*
 
  - The purpose of an employee inquiry can vary, but it is often conducted by employers, human resources (HR) departments, or management to gather information or address specific concerns .
 
-## **API**
-https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/EmployeeInquiry/GetAllInquiries?employeeId
+## API
+
+Method : GET
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/EmployeeInquiry/GetAllInquiries?employeeId
+
+Parameters : 
+
+ - employeeId
+ - user-id
 
 ![](./Employee%20portal%20imgs/employee%20inquiry.PNG)
 
@@ -253,13 +342,24 @@ Status Name , Created On , Employee Inquiry Details	, Can Add Notes ._**
 ## Create - Employee Inquiry
 
 ## API
- https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
+
+Method : GET
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
+
+Parameters :
+ - EntityTypeId
 
 ![](./Employee%20portal%20imgs/create-%20employee%20inquiry.PNG)
 
 ### Add API
- 
-https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+
+Method : GET
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+
+Parameters :
+ - EntityData
 
 # Employee View
  - `employee view` could refer to the user interface or dashboard that employees use to access and interact with HR-related information . 
@@ -274,7 +374,10 @@ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityDa
 
 ## API
 
-https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotifications?employeeId
+Method : GET
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotifications?employeeId
+
 
  - A notification is a message or alert that informs someone about a      **_specific event, update,_** or **_piece of information ._**
  
@@ -286,16 +389,38 @@ https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotif
 
 ### English Notification API
 
-https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotifications?employeeId
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotifications?employeeId
+
+Parameters :
+
+ - employeeId: e8247859-a7f0-e911-8126-005056867cf2
+ - user-id
 
 ### Arabic Notification API
 
-https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotifications?employeeId
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Notifications/GetNotifications?employeeId=e8247859-a7f0-e911-8126-005056867cf2&user-id=1048417&lang=ar
+
+Parameters :
+
+ - employeeId
+ - user-id
+ - lang
 
 ## Announcement
 
 ## API
-https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Announcements/GetAnnouncements?user-id
+
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Announcements/GetAnnouncements?user-id
+
+Parameters :
+
+ - user-id
 
  - An employee **announcement** is a formal communication or notification within an organization to inform employees about **_significant events, changes, or news related to the company ._**
 
@@ -304,7 +429,17 @@ https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/Announcements/GetAnnou
 ## Appointment
 
 ## API 
-https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/MainOfficeReserReq/GetAllRequests?employeeId
+
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/MainOfficeReserReq/GetAllRequests?employeeId
+
+Parameters :
+
+ - employeeId
+ - pageSize
+ - pageNumber
+ - user-id
 
 - An `appointment` generally refers to a predetermined arrangement or scheduled meeting between two or more people at a specified time and place .
 
@@ -315,9 +450,13 @@ https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/MainOfficeReserReq/Get
  - **_Previous Request_** generally refers to a request that was made before the current one in a sequence of requests. In various contexts such as web development, networking, or database interactions, it could imply different scenarios .
 
 ## Create - Appointment
+
 ###  create API 
+
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId 
  
- https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
 
 ![](./Employee%20portal%20imgs/create-%20appointment.PNG)
 
@@ -326,7 +465,10 @@ https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/MainOfficeReserReq/Get
 
 ## API
 
-https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/TrafficFines/GetAllTrafficFines?employeeId
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/TrafficFines/GetAllTrafficFines?employeeId
+
 
  - A `Traffic Fine List` typically refers to a compilation or record of fines imposed on individuals for violations of traffic laws and regulations . 
 
@@ -337,7 +479,10 @@ https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/TrafficFines/GetAllTra
 
 ## API
 
-https://portal.mawarid.com.sa/Employee/api/v2/crm/GetMedicalCover
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetMedicalCover
+
 
  - `Medical insurance`, also known as **_Health insurance_**, is a type of coverage that provides financial protection and assistance in covering the costs of medical and health-related expenses . 
 
@@ -351,7 +496,20 @@ https://portal.mawarid.com.sa/Employee/api/v2/crm/GetMedicalCover
 # FAQ
 
 ## API
- https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
+
+Method : GET 
+
+Parameters :
+
+  - entityTypeRecId: 68
+  - $page
+  - $size
+  - $orderby
+  - $orderbydirection
+  - $filter:Language
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
+ 
 - `FAQ` stands for `Frequently Asked Questions.`
 
 - It refers to a list of common questions and their corresponding answers that are compiled to provide information on a particular topic . 
@@ -364,7 +522,18 @@ https://portal.mawarid.com.sa/Employee/api/v2/crm/GetMedicalCover
 # FAQ - Admin
 
 ## API
-https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
+
+Method : GET 
+
+Parameters :
+
+ - entityTypeRecId
+ - $page
+ - $size
+
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
+
 
 - If `FAQ-admin` is used in a specific context or within a certain system, platform, or organization, it could be a custom term created for **administrative functions related to managing and updating Frequently Asked Questions .** 
 - For example, it might be a role or a tool within a website or software system that allows administrators to **_edit, add, or organize frequently asked questions on a webpage or application ._**
@@ -372,19 +541,26 @@ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityType
 ![](./Employee%20portal%20imgs/entitytype%20faq.PNG)
 
 - ### Create -EntityTypeFAQ 
+
   - If `Create -EntityTypeFAQ` is used in a specific context, it could be a command or function within a **_software development environment, content management system, or a proprietary system used by a particular organization ._**
   
   ![](./Employee%20portal%20imgs/create-entity%20type%20FAQ.PNG)
 
 ### Add API 
-  
-https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+
+Method : POST 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData  
+
 
   - Add EntityType FAQ is add the employee details for **_ModuleID , Language , OrderID , Question , Answer ._**
 
 ### Language Dropdown API
 
-https://portal.mawarid.com.sa/Employee/api/v1/lookupvalues/GetAllByLookTypeId/1
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/lookupvalues/GetAllByLookTypeId/1
+
  
  ![](./Employee%20portal%20imgs/language%20dropdown.PNG)
 
@@ -392,11 +568,20 @@ https://portal.mawarid.com.sa/Employee/api/v1/lookupvalues/GetAllByLookTypeId/1
 
 ### Edit popup API
 
-https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form/activationrecorddetails/68
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form/activationrecorddetails/68
+
 
 ### Update API
-    
-  https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/update?EntityData
+
+Method : PUT 
+
+Parameters : 
+ - EntityData
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/update?EntityData    
+  
 
   ![](./Employee%20portal%20imgs/edit-entity%20typeFAQ.PNG)
 
@@ -407,24 +592,51 @@ https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form/activationrecordde
 
 ## API
 
+Method : GET 
 
-https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
+Parameters :
+
+ - WorkItemTypeId
+ - CategoryId
+ - $filter:IqamaNumber
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
+
 
 # Requests
   - The term `request` refers to the act of asking for something or seeking assistance. In various contexts, a request can be a formal or informal expression of the desire or need for a particular action, information, service, or permission.
 
 ## API
- https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
+
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
+ 
+Parameters 
+
+ - entityTypeRecId
+ - $filter:IqamaNumber
+ - processStageId
+
 
 **_Create API_**
-  
-   https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
+
+Method : GET 
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId  
+   
 
  ![](./Employee%20portal%20imgs/create-requests.PNG)
 
 **_Add API_**
 
-https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+Method : GET 
+
+Parameters :
+ 
+ - EntityData
+
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
 
  - This one Create - Request for Add the **_Iqama Number , Coordinator , CoordinatorEmail ,  Supervisor , Supervisor Email , Title , Description , Language , Request Type ._**
 
