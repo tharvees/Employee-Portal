@@ -23,7 +23,8 @@ URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
 
  - **_Register Mobile Number_**
    - A employee portal employee must register phone number .
-   - And **Iqama Number , Passport Number , Phone Number**  details to give .
+   - And **Iqama Number , Passport Number , Phone Number**  details to give.
+
 ## Register Api 
 
 Method : GET
@@ -39,6 +40,7 @@ URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
      - **_Passport Number ,_**    
      - **_Old Phone Number ,_** 
      - **_New Phone Number ._**
+
 ## Update Api 
 
 Method : GET
@@ -110,6 +112,7 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeI
 # **PaySlip**
   -  Pay slip is a document containing a detailed list about the various components of your salary along with specific details of employment.
   - If you need payslip You can **Download** it 
+  - **NOTE** : **Show last 3 months PaySlip only**
 ## API
 
 Method : GET
