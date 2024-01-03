@@ -641,12 +641,12 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
 Method : GET 
 
 Parameters :
- 
- - EntityData
 
-URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
 
- - This one Create - Request for Add the **_Iqama Number , Coordinator , CoordinatorEmail ,  Supervisor , Supervisor Email , Title , Description , Language , Request Type ._**
+- EntityData
+
+  - This one Create - Request for Add the **_Iqama Number , Coordinator , CoordinatorEmail ,  Supervisor , Supervisor Email , Title , Description , Language , Request Type ._**
 
  - after Add the details successfully into the message .
 
