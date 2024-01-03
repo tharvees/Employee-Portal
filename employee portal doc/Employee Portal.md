@@ -124,7 +124,7 @@ Method : GET
 URL : https://bcp.mawarid.com.sa/api/v1/erp/getEmployeePaySlipDetails?_employeeId 
 
 Parameters :
- - _employeeId
+ - employeeId
  - legalEntity
 
 
@@ -441,12 +441,12 @@ Method : GET
 
 URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/MainOfficeReserReq/GetAllRequests?employeeId
 
-Parameters :
+ - Parameters :
 
- - employeeId
- - pageSize
- - pageNumber
- - user-id
+   - employeeId
+   - pageSize
+   - pageNumber
+   - user-id
 
 - An `appointment` generally refers to a predetermined arrangement or scheduled meeting between two or more people at a specified time and place .
 
@@ -480,6 +480,10 @@ Method : GET
 
 URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/TrafficFines/GetAllTrafficFines?employeeId
 
+ - Parameter :
+   - employeeId
+   - user-id
+
 
  - A `Traffic Fine List` typically refers to a compilation or record of fines imposed on individuals for violations of traffic laws and regulations . 
 
@@ -511,16 +515,16 @@ URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetMedicalCover
 
 Method : GET 
 
-Parameters :
-
-  - entityTypeRecId: 68
-  - $page
-  - $size
-  - $orderby
-  - $orderbydirection
-  - $filter:Language
-
 URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
+
+  - Parameters :
+
+    - entityTypeRecId: 68
+    - $page
+    - $size
+    - $orderby
+    - $orderbydirection
+    - $filter:Language
  
 - `FAQ` stands for `Frequently Asked Questions.`
 
@@ -537,15 +541,13 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?enti
 
 Method : GET 
 
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
+
 Parameters :
 
  - entityTypeRecId
  - $page
  - $size
-
-
-URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?entityTypeRecId
-
 
 - If `FAQ-admin` is used in a specific context or within a certain system, platform, or organization, it could be a custom term created for **administrative functions related to managing and updating Frequently Asked Questions .** 
 - For example, it might be a role or a tool within a website or software system that allows administrators to **_edit, add, or organize frequently asked questions on a webpage or application ._**
@@ -589,11 +591,10 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form/activationre
 
 Method : PUT 
 
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/update?EntityData
+
 Parameters : 
  - EntityData
-
-URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/update?EntityData    
-  
 
   ![](./Employee%20portal%20imgs/edit-entity%20typeFAQ.PNG)
 
@@ -606,13 +607,13 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/update?En
 
 Method : GET 
 
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
+
 Parameters :
 
  - WorkItemTypeId
  - CategoryId
  - $filter:IqamaNumber
-
-URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
 
 
 ## Requests
