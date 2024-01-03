@@ -640,9 +640,9 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
 
 Method : GET 
 
-Parameters :
+URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
 
- URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+Parameters :
 
 - EntityData
 
