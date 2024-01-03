@@ -15,6 +15,10 @@ URL : https://portal.mawarid.com.sa/Employee/UI/#/Employee/login
 
 Method : GET
 
+Parameters :
+ - IqamaNO
+ - user-id
+
 URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetEmployeeByID?IqamaNO
 
 
