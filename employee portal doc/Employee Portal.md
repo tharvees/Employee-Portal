@@ -109,11 +109,11 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeI
 
   ![](./Employee%20portal%20imgs/history%20of%20loan.PNG)
 
-# **PaySlip**
+## **PaySlip**
   -  Pay slip is a document containing a detailed list about the various components of your salary along with specific details of employment.
   - If you need payslip You can **Download** it 
   - **NOTE** : **Show last 3 months PaySlip only**
-## API
+### API
 
 Method : GET
 
@@ -127,7 +127,7 @@ Parameters :
 ![](./Employee%20portal%20imgs/payslip.PNG)
 
 
-# **Letter Download**
+## **Letter Download**
  - `Letter download` typically refers to the process of obtaining or retrieving a letter or document from the internet or a digital platform to your local device. 
  - This can include various types of letters, such as formal letters, business letters, reference letters, or any document that is available for download in a digital format.   
 ## API
@@ -141,7 +141,7 @@ URL : https://bcp.mawarid.com.sa/api/v2/crm/GetDownLoadLetterTypes
 
 <!-- file:///C:/Users/HOME/Downloads/BR000145520231228.pdf  -->
 
-# **Observation**
+## **Observation**
  
   - Employee observation refers to the practice of systematically observing and assessing an employee's job performance, behavior, skills, and interactions within the workplace . 
   - This process is often conducted by supervisors, managers, or designated individuals within an organization as a part of performance management and evaluation . 
@@ -159,7 +159,7 @@ Parameters :
 
 ![](./Employee%20portal%20imgs/observation.PNG)
 
-# **Create Observation**
+## **Create Observation**
 
 ## API
 
@@ -197,7 +197,7 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?En
 
  A leave request is a formal communication from an employee to their employer seeking approval to take time off from work. Employees may request leave for various reasons, including personal matters, family obligations, health issues, vacations, or other personal or professional reasons.
 
-## **API**
+### **API**
 
 Method : GET
 
@@ -254,7 +254,7 @@ Return Date ._**
       - **_Sick Leave_**
       - **_Personal Leave_**
 
-# Final Exit Request 
+## Final Exit Request 
 
 ## API 
 
@@ -271,10 +271,10 @@ Parameters :
    - **_Final Exit Request_** contains **_Request Number	
 Request Date , Request Status , Request Type , Last Working Date , Visa Start Date , Visa Number , Flight Number , Flight Ticket TravelDate_**	and **_End Of Service Amount ._**
 
-# Employee Iqama Renewal
+## Employee Iqama Renewal
   - the Iqama (residence permit) for expatriate employees is typically issued for a specific duration, usually one year. **_To continue living and working in the country, employees need to go through the Iqama renewal process before their current permit expires ._** 
 
-## API
+### API
 <!-- https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId -->
  
 Method : GET 
@@ -297,9 +297,9 @@ Parameters :
 
 ![](./Employee%20portal%20imgs/employee%20iqama%20renewal.PNG)
 
-# Employee contract Renewal
+## Employee contract Renewal
 
-## API
+### API
 
 Method : GET
 
@@ -321,12 +321,12 @@ Old Contract End Date , Period In Months , Customer Approval , Labor Approval .*
 
 ![](./Employee%20portal%20imgs/employee%20contract%20renewal.PNG)
 
-# Employee Inquiry
+## Employee Inquiry
  - `Employee inquiry` typically refers to the process of **_seeking information or conducting an investigation related to an employee's work, conduct, performance, or any other relevant aspect of their employment ._** 
 
  - The purpose of an employee inquiry can vary, but it is often conducted by employers, human resources (HR) departments, or management to gather information or address specific concerns .
 
-## API
+### API
 
 Method : GET
 
@@ -344,7 +344,7 @@ Status Name , Created On , Employee Inquiry Details	, Can Add Notes ._**
 
 ## Create - Employee Inquiry
 
-## API
+### API
 
 Method : GET
 
@@ -364,7 +364,7 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?En
 Parameters :
  - EntityData
 
-# Employee View
+## Employee View
  - `employee view` could refer to the user interface or dashboard that employees use to access and interact with HR-related information . 
  - This could include features such as viewing their **_personal details, pay stubs, benefits information, requesting time off, accessing training materials, and more ._**
  - Employee View it contains of 
@@ -375,7 +375,7 @@ Parameters :
 
 ## Notification 
 
-## API
+### API
 
 Method : GET
 
@@ -415,7 +415,7 @@ Parameters :
 
 ## Announcement
 
-## API
+### API
 
 Method : GET 
 
@@ -431,7 +431,7 @@ Parameters :
 
 ## Appointment
 
-## API 
+### API 
 
 Method : GET 
 
@@ -463,10 +463,14 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/form?EntityTypeId
 
 ![](./Employee%20portal%20imgs/create-%20appointment.PNG)
 
+## Add Api
+
+https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?EntityData
+
 
 ## Traffic Fine List
 
-## API
+### API
 
 Method : GET 
 
@@ -478,9 +482,9 @@ URL : https://portal.mawarid.com.sa/Employee/api/v2/employeecrm/TrafficFines/Get
  - Traffic fines are penalties imposed by law enforcement authorities for various traffic offenses, such as speeding, running red lights, improper parking, and other violations .
 
 
-# Medical Insurance
+## Medical Insurance
 
-## API
+### API
 
 Method : GET 
 
@@ -496,9 +500,10 @@ URL : https://portal.mawarid.com.sa/Employee/api/v2/crm/GetMedicalCover
  - If any doubt go to the 
  - Customer Care Email : customercare@mawarid.com.sa
  - Customer Care Number : 920027202
-# FAQ
 
-## API
+## FAQ
+
+### API
 
 Method : GET 
 
@@ -522,9 +527,9 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/get/?enti
 ![](./Employee%20portal%20imgs/faq.PNG)
 
 
-# FAQ - Admin
+## FAQ - Admin
 
-## API
+### API
 
 Method : GET 
 
@@ -588,12 +593,12 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/update?En
 
   ![](./Employee%20portal%20imgs/edit-entity%20typeFAQ.PNG)
 
-# Task
+## Task
   - A `task` generally refers to a specific piece of work or an activity that needs to be accomplished within a set period . 
   - Tasks are typically **part of larger projects, job responsibilities, or personal to-do lists .** 
     - They are specific actions or assignments that contribute to **_achieving a goal or completing a project ._**
 
-## API
+### API
 
 Method : GET 
 
@@ -606,10 +611,10 @@ Parameters :
 URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/field?EntityTypeId
 
 
-# Requests
+## Requests
   - The term `request` refers to the act of asking for something or seeking assistance. In various contexts, a request can be a formal or informal expression of the desire or need for a particular action, information, service, or permission.
 
-## API
+### API
 
 Method : GET 
 
@@ -645,6 +650,6 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?En
 
  - after Add the details successfully into the message .
 
-# API Collection 
+## API Collection 
 
-   - [Employee portal API](./Employee%20Portal.postman_collection.json).
+   - [Employee portal API](./Employee%20Portal.postman_collection.json) .
