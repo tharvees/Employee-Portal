@@ -650,6 +650,5 @@ URL : https://portal.mawarid.com.sa/Employee/api/v1/entitytype/dynamic/insert?En
 
  - after Add the details successfully into the message .
 
-## API Collection 
-
-   - [Employee portal API](./Employee%20Portal.postman_collection.json) .
+## API
+  - [Employee Portal API](./Employee%20Portal.postman_collection.json)
