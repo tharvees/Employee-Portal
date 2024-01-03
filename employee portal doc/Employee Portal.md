@@ -654,5 +654,5 @@ Parameters :
 
  - after Add the details successfully into the message .
 
-## API
+## API Collection
   - [Employee Portal API](./Employee%20Portal.postman_collection.json)
